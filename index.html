@@ -1,61 +1,63 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content=
-		"width=device-width,initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sample TC</title>
+	<link rel="icon" type="image/x-icon" href="dummy.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+	"width=device-width,initial-scale=1.0">
 
-		<!-- CSS only -->
-		<link href=
-	"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-			integrity=
-	"sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-			crossorigin="anonymous" rel="stylesheet">
+	<!-- CSS only -->
+	<link href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+		integrity=
+"sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+		crossorigin="anonymous" rel="stylesheet">
 
-		<!-- Html2Pdf -->
-		<script src=
-	"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
-			integrity=
-	"sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
-			crossorigin="anonymous">
+	<!-- Html2Pdf -->
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+		integrity=
+"sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+		crossorigin="anonymous">
+	</script>
+	<script src=
+	"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 		</script>
 		<script src=
-		"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-			</script>
-			<script src=
-		"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
-			</script>
-			<script src=
-		"https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
+	"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+		</script>
+		<script src=
+	"https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
+	
+		</script>
+		<script src="js/jsPDF/dist/jspdf.umd.js"></script>
+		<script src=
+	"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity=
+	"sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous">
+		</script>
 		
-			</script>
-			<script src="js/jsPDF/dist/jspdf.umd.js"></script>
-			<script src=
-		"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-				integrity=
-		"sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-				crossorigin="anonymous">
-			</script>
-			
-		<style>
-			.heading{
-			text-align: center;
-			color: #0d0c14;
-			}
-			.rowdesign{
-				height: 60px;
-			}
-			
-  			.uppercase {
-    			text-transform: uppercase;
- 			 }
-			  .imagestyle{
-                    width: 80px;
-                    height: 85px;
+	<style>
+		.heading{
+		text-align: center;
+		color: #0d0c14;
+		}
+		.rowdesign{
+			height: 60px;
+		}
+		
+		  .uppercase {
+			text-transform: uppercase;
+		  }
+		  .imagestyle{
+				width: 90px;
+                    height: 95px;
                     align-content: end;
-                
-                }
-				.tablestyle {
+			
+			}
+			.tablestyle {
 border: 1px solid black;
 border-collapse: collapse;
 padding-left: 5px;
@@ -126,484 +128,533 @@ padding-right: 3px;
 <div style="padding-top: 15px;"> 
 				<div style="color: rgb(248, 250, 247); font-weight: 500; padding-left: 50px; "  > Quick Links>>>
 				
-				<a href="https://skyssoft.github.io/SeatingArrangement/goldenhills" target="_blank"><input type="button" class="button-3" value="Exam Seating Arrangement";> </a>
-				<a href="https://skyssoft.github.io/voucherPrint/goldenhills" target="_blank"><input type="button" class="button-3" value="Voucher Print";></a>
+				<a href="https://skyssoft.github.io/SampleSeatingArrangement/" target="_blank"><input type="button" class="button-3" value="Exam Seating Arrangement";> </a>
+				<a href="https://skyssoft.github.io/voucherPrint/samplevoucher" target="_blank"><input type="button" class="button-3" value="Voucher Print";></a>
 				<span style="color: rgb(255, 255, 255); text-align: right; font-size: 25 px;">Contact: 9526455151 </span>
 				</div>
 			</div>
 
-			<div style="width: 200px; position: absolute; padding-top: 30px; padding-left: 40px; ">
+
+
+		
+		<div style="width: 200px; position: absolute; padding-top: 30px; padding-left: 40px; ">
+		<img src="goldenhillslogo.jpg" class="imagestyle">
+		</div>
+		<div>
+			
+		<div style="padding-left: 160px; padding-right: 200px;">
+		<h3 class="heading" style="padding-top: 25px; color: #ffffff;">
+			Golden Hills Arts & Science College
+				</h3>
+				
+	<h2 class="heading" style="padding-top: 5px; padding-bottom: 25px; font-size: 30px; color: #ffd902;">Transfer & Conduct Certificate
+	<h5 style="color: red; text-align: center; ">  Please verify before generate TC &#9989;</h4>
+	</h2>
+	
+</div>
+	
+
+	<!-- Form encrypted as text -->
+	<form id ="form-print" enctype="text/plain" class="form-control" style="padding: 50px;">
+		<table>
+			<tr style="height: 60px;">
+				<td><label for="tcno"> <strong>TC Number: </strong></label></td>
+				<td><input class="form-control" type="text"	id="tcno" name="tcno" placeholder="Enter TC Number" value=""></td>
+				<td></td>
+				<td style="text-align: right;"><label for="tcdate"  > <strong>Date: </strong></label></td>
+				<td><input class="form-control" type="date"	id="tcdate" name="tcdate" placeholder="Enter Date" value=""></td>
+			</tr>
+			<tr style="height: 60px;">
+				<td><label for="name"> <strong>Name of the student: </strong></label></td>
+				<td colspan="4"> <input class="form-control fulllength form-control uppercase" type="text"	id="name" name="name" placeholder="Enter Name"></td>
+			</tr>
+			<tr style="height: 60px;">
+				<td><label for="name"> <strong>Date of Birth: </strong></label></td>
+				<td><input class="form-control" type="date" id="dobdate" name="dobdate" placeholder="" onSelect="convertToDateWords()"></td>
+			</tr>
+			<tr style="height: 60px;">
+				<td><label for="name"> <strong>Date of Birth(in words):&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </strong></label></td>
+				<td colspan="4"><input class="form-control uppercase" type="text"	id="dobwords" name="dobwords" placeholder="in words"></td><td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Course: </strong></label></td>
+				<td colspan="3"><select class="form-control" type=""	id="course" name="" placeholder="">
+					<option value=" ">--select course--</option>
+					
+					<option>B.COM COMPUTER APPLICATION</option>
+					<option>B.COM FINANCE</option>
+					<option>BA ENGLISH LANGUAGE AND LITERATURE</option>
+					<option>BA PUBLIC ADMINISTRATION</option>
+					<option>BA POLITICAL SCIENCE</option>
+					<option>BSC MATHEMATICS</option>
+						
+
+				</select></td>
+				<td colspan="1"><select class="form-control" type=""	id="honours" name="" placeholder="">
+					<option value="">if Honours</option>
+					<option value=" HONOURS">HONOURS</option></select></td>
+					
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Date of Admission: </strong></label></td>
+				<td><input class="form-control" type="date"	id="admission_date" name="" placeholder=""></td>
+				<td></td>
+				<td style="text-align: right;"><label for="name"> <strong>Admission No.: </strong></label></td>
+				<td><input class="form-control" type="text"	id="admn_No" name="" placeholder="Enter Admission No."></td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Date of leaving: </strong></label></td>
+				<td><input class="form-control" type="date"	id="leaving_date" name="" placeholder=""></td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>From(Semester): </strong></label></td>
+				<td><select class="form-control" id="from_sem">
+					<option value=" ">Select</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+				</td><td>	
+				</td><td style="text-align: right;">			
+					<label  for="name"> <strong> To: </strong></label></td>
+				<td><select class="form-control" id="to_sem">
+					<option value=" ">Select</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					</select></td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Reason for leaving: </strong></label></td>
+				<td colspan="3"><input class="form-control uppercase" type="text"	id="reason" name="reason" placeholder="Enter/select Reason" ></td>
+				<td><select class="form-control" id="reason_selection" onchange="ReasonSelection()">
+					<option value=" ">Select from here</option>
+					<option>COURSE COMPLETED</option>
+					<option>DISCONTINUED</option>
+					<option>COLLEGE TRANSFER</option>
+					<option>COURSE EXIT</option>
+				</select></td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Examination Last appeared: </strong></label></td>
+				<td colspan="3"><input class="form-control uppercase" type="text"	id="exam_appeared" name="exam_appeared" placeholder="Enter/select Examination"></td>
+				<td><select class="form-control" id="exam_selection" onchange="LastAppearedExam()">
+					<option value=" ">Select from here</option>
+
+					<option>EIGHTH SEMESTER</option>
+					<option>SEVENTH SEMESTER</option>
+
+					<option>SIXTH SEMESTER</option>
+					<option>FIFTH SEMESTER</option>
+					<option>FOURTH SEMESTER</option>
+					<option>THIRD SEMESTER</option>
+					<option>SECOND SEMESTER</option>
+					<option>FIRST SEMESTER</option>
+					<option>NOT APPEARED</option>
+					<option>NOT REGISTERED</option>
+				</select></td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Month & year: </strong></label></td>
+				<td colspan="3"><input class="form-control uppercase" type="text"	id="month_year" name="month_year" placeholder="Enter/select Month & Year"></td>
+				<td><select class="form-control" id="exam_month_selection" onchange="examMonth()">
+					<option value=" ">Select from here</option>
+
+					<option value=" APRIL 20">APRIL 20</option>
+					<option value=" NOVEMBER 20">NOVEMBER 20</option>
+					<option value=" "></option>
+					<option value=" JANUARY 20">JANUARY 20</option>
+					<option value=" FEBRUARY 20">FEBRUARY 20</option>
+					<option value=" MARCH 20">MARCH 20</option>
+					<option value=" MAY 20">MAY 20</option>
+					<option value=" JUNE 20">JUNE 20</option>
+					<option value=" JULY 20">JULY 20</option>
+					<option value=" AUGUST 20">AUGUST 20</option>
+					<option value=" SEPTEMBER 20">SEPTEMBER 20</option>
+					<option value=" OCTOBER 20">OCTOBER 20</option>
+					<option value=" DECEMBER 20">DECEMBER 20</option>
+					<option value="NA">NA</option>
+					<option value="-">-</option>
+				</select></td>
+				
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Register Number: </strong></label></td>
+				<td colspan="3"><input class="form-control uppercase" type="text"	id="regno" name="regno" placeholder="Enter Register Number"></td>
+				
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Whether qualified for promotion: </strong></label></td>
+				<td colspan="3"><select class="form-control" type="text"	id="promotion" name="promotion" placeholder="select">
+					<option value="">--Select--</option>
+					<option value="YES">YES</option>
+					<option value="NO">NO</option>
+					<option value="-">-</option>
+				</td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Whether all dues to the college have been cleared: </strong></label></td>
+				<td colspan="3"><select class="form-control" type="text"	id="dues" name="dues" placeholder="select">
+					<option value="">--Select--</option>
+					<option value="YES">YES</option>
+					<option value="NO">NO</option>
+					<option value="-">-</option>
+				</td>
+			</tr>
+			
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Date of application for Transfer Certificate: </strong></label></td>
+				<td colspan="3"><input class="form-control" type="date"	id="appli_date" name="appli_date" placeholder=""></td>
+			</tr>
+			<tr class="rowdesign">
+				<td><label for="name"> <strong>Student's Conduct and Character: </strong></label></td>
+				<td colspan="3"><input class="form-control uppercase" type="text"	id="stcharacter" name="stcharacter" placeholder="Enter/select Character"></td>
+				<td><select class="form-control" id="char_selection" onchange="charSelection()">
+					<option value=" ">Select from here</option>
+					<option value="GOOD">GOOD</option>
+					<option>SATISFACTORY</option>
+					
+				</select></td>
+			</tr>
+			<tr><td><br></td></tr>
+			<tr>
+				<td><h6 style="color: red; "> Please verify before generate TC </h6></td>
+			<td>
+				
+				
+			<input type="button" class="btn btn-primary"
+			onclick="GeneratePdf()" value="Generate TC"></td>
+		</tr>
+	</table>
+	</form>
+</div>
+</div>
+</div>
+				
+	<script>		
+
+
+   
+
+		function GeneratePdf() {
+	// Get user data
+	const tcno = document.getElementById('tcno').value;
+	const tcdate = formatDateToDdMmYyyy(new Date(document.getElementById('tcdate').value));
+	const name = document.getElementById('name').value;
+	const dobdate = formatDateToDdMmYyyy(new Date(document.getElementById('dobdate').value));
+	const dobwords = document.getElementById('dobwords').value;
+	const course = document.getElementById('course').value;
+	const honours = document.getElementById('honours').value;
+	const admission_date = formatDateToDdMmYyyy(new Date(document.getElementById('admission_date').value));
+	const admn_No = document.getElementById('admn_No').value;
+	const leaving_date = formatDateToDdMmYyyy(new Date(document.getElementById('leaving_date').value));
+	const from_sem = document.getElementById('from_sem').value;
+	const to_sem = document.getElementById('to_sem').value;
+	const reason = document.getElementById('reason').value;
+	const exam_appeared = document.getElementById('exam_appeared').value;
+	const month_year = document.getElementById('month_year').value;
+	const promotion = document.getElementById('promotion').value;
+	const regno = document.getElementById('regno').value;
+	const dues = document.getElementById('dues').value;
+	
+	const appli_date = formatDateToDdMmYyyy(new Date(document.getElementById('appli_date').value));
+	const stcharacter = document.getElementById('stcharacter').value;
+	
+	
+	// Create the PDF content as an HTML string
+	const pdfContent = `
+
+	<div >
+			
+			<div style="width: 82px; position: relative; padding-top: 10px; align-self: right; float: left;padding-left: 10px; ">
 			<img src="goldenhillslogo.jpg" class="imagestyle">
 			</div>
-			<div>
-				
-			<div style="padding-left: 160px; padding-right: 200px;">
-			<h2 class="heading" style="padding-top: 25px; color: aliceblue;">
-					Golden Hills Arts & Science College, Elettil
-					</h2>
-		<h2 class="heading" style="padding-bottom: 25px; font-size: 26px;color: rgb(229, 232, 12);">
-		Transfer & Conduct Certificate
-		</h2>
-		
-	</div>
-		<h4 style="color: red; text-align: center;"> Please verify before generate TC </h4>
-
-		<!-- Form encrypted as text -->
-		<form id ="form-print" enctype="text/plain" class="form-control" style="padding: 50px;">
-			<table>
-				<tr style="height: 60px;">
-					<td><label for="tcno"> <strong>TC Number: </strong></label></td>
-					<td><input class="form-control" type="text"	id="tcno" name="tcno" placeholder="Enter TC Number" value=""></td>
-					<td></td>
-					<td style="text-align: right;"><label for="tcdate"  > <strong>Date: </strong></label></td>
-					<td><input class="form-control" type="date"	id="tcdate" name="tcdate" placeholder="Enter Date" value=""></td>
-				</tr>
-				<tr style="height: 60px;">
-					<td><label for="name"> <strong>Name of the student: </strong></label></td>
-					<td colspan="4"> <input class="form-control fulllength form-control uppercase" type="text"	id="name" name="name" placeholder="Enter Name"></td>
-				</tr>
-				<tr style="height: 60px;">
-					<td><label for="name"> <strong>Date of Birth: </strong></label></td>
-					<td><input class="form-control" type="date" id="dobdate" name="dobdate" placeholder="" onSelect="convertToDateWords()"></td>
-				</tr>
-				<tr style="height: 60px;">
-					<td><label for="name"> <strong>Date of Birth(in words):&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </strong></label></td>
-					<td colspan="4"><input class="form-control uppercase" type="text"	id="dobwords" name="dobwords" placeholder="in words"></td><td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Course: </strong></label></td>
-					<td colspan="4"><select class="form-control" type=""	id="course" name="" placeholder="">
-						<option>--select course--</option>
-						<option>B.COM COMPUTER APPLICATION</option>
-						<option>B.COM FINANCE</option>
-						<option>B.A ENGLISH LANGUAGE AND LITERATURE</option>
-						<option>B.A PUBLIC ADMINISTRATION</option>
-						<option>B.A POLITICAL SCIENCE</option>
-						<option>B.SC MATHEMATICS</option>
-					</select></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Date of Admission: </strong></label></td>
-					<td><input class="form-control" type="date"	id="admission_date" name="" placeholder=""></td>
-					<td></td>
-					<td style="text-align: right;"><label for="name"> <strong>Admission No.: </strong></label></td>
-					<td><input class="form-control" type="text"	id="admn_No" name="" placeholder="Enter Admission No."></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Date of leaving: </strong></label></td>
-					<td><input class="form-control" type="date"	id="leaving_date" name="" placeholder="Enter Name"></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>From(Semester): </strong></label></td>
-					<td><select class="form-control" id="from_sem">
-						<option>Select</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-					</select>
-					</td><td>	
-					</td><td style="text-align: right;">			
-						<label  for="name"> <strong> To: </strong></label></td>
-					<td><select class="form-control" id="to_sem">
-						<option>Select</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						</select></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Reason for leaving: </strong></label></td>
-					<td colspan="3"><input class="form-control uppercase" type="text"	id="reason" name="reason" placeholder="Edit/select Reason" ></td>
-					<td><select class="form-control" id="reason_selection" onchange="ReasonSelection()">
-						<option>Select from here</option>
-						<option>COURSE COMPLETED</option>
-						<option>DISCONTINUED</option>
-						<option>COLLEGE TRANSFER</option>
-					</select></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Examination Last appeared: </strong></label></td>
-					<td colspan="3"><input class="form-control uppercase" type="text"	id="exam_appeared" name="exam_appeared" placeholder="Edit/select Examination"></td>
-					<td><select class="form-control" id="exam_selection" onchange="LastAppearedExam()">
-						<option>Select from here</option>
-						<option>SIXTH SEMESTER</option>
-						<option>FIFTH SEMESTER</option>
-						<option>FOURTH SEMESTER</option>
-						<option>THIRD SEMESTER</option>
-						<option>SECOND SEMESTER</option>
-						<option>FIRST SEMESTER</option>
-						<option>NOT APPEARED</option>
-						<option>NOT REGISTERED</option>
-					</select></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Month & year: </strong></label></td>
-					<td colspan="3"><input class="form-control uppercase" type="text"	id="month_year" name="month_year" placeholder="Enter Month & Year"></td>
-					
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Register Number: </strong></label></td>
-					<td colspan="3"><input class="form-control uppercase" type="text"	id="regno" name="regno" placeholder="Enter Register Number"></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Whether qualified for promotion: </strong></label></td>
-					<td colspan="3"><select class="form-control" type="text"	id="promotion" name="promotion" placeholder="select">
-						<option value="">--Select--</option>
-						<option value="YES">YES</option>
-						<option value="NO">NO</option>
-						<option value="-">-</option>
-					</td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Whether all dues to the college have been cleared: </strong></label></td>
-					<td colspan="3"><select class="form-control" type="text"	id="dues" name="dues" placeholder="select">
-						<option value="">--Select--</option>
-						<option value="YES">YES</option>
-						<option value="NO">NO</option>
-						<option value="-">-</option>
-					</td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Whether the student availed any fee concession: </strong></label></td>
-					<td colspan="3"><select class="form-control" type="text"	id="concession" name="concession" placeholder="select">
-						<option value="">--Select--</option>
-						<option value="YES">YES</option>
-						<option value="NO">NO</option>
-						<option value="_">-</option>
-					</td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Date of application for Transfer Certificate: </strong></label></td>
-					<td colspan="3"><input class="form-control" type="date"	id="appli_date" name="appli_date" placeholder=""></td>
-				</tr>
-				<tr class="rowdesign">
-					<td><label for="name"> <strong>Student's Conduct and Character: </strong></label></td>
-					<td colspan="3"><input class="form-control uppercase" type="text"	id="stcharacter" name="Character" placeholder="Enter Character"></td>
-				</tr>
-				<tr>
-					<td><h6 style="color: red; "> Please verify before generate TC </h6></td></tr>
-				<tr><td>
-				<input type="button" class="btn btn-primary"
-				onclick="GeneratePdf()" value="Generate TC"></td>
-			</tr>
-		</table>
-		</form>
-	</div>
-	</div>
-	</div>
-					
-		<script>		
-			function GeneratePdf() {
-		// Get user data
-		const tcno = document.getElementById('tcno').value;
-		const tcdate = formatDateToDdMmYyyy(new Date(document.getElementById('tcdate').value));
-		const name = document.getElementById('name').value;
-		const dobdate = formatDateToDdMmYyyy(new Date(document.getElementById('dobdate').value));
-		const dobwords = document.getElementById('dobwords').value;
-		const course = document.getElementById('course').value;
-		const admission_date = formatDateToDdMmYyyy(new Date(document.getElementById('admission_date').value));
-		const admn_No = document.getElementById('admn_No').value;
-		const leaving_date = formatDateToDdMmYyyy(new Date(document.getElementById('leaving_date').value));
-		const from_sem = document.getElementById('from_sem').value;
-		const to_sem = document.getElementById('to_sem').value;
-		const reason = document.getElementById('reason').value;
-		const exam_appeared = document.getElementById('exam_appeared').value;
-		const month_year = document.getElementById('month_year').value;
-		const promotion = document.getElementById('promotion').value;
-		const regno = document.getElementById('regno').value;
-		const dues = document.getElementById('dues').value;
-		const concession = document.getElementById('concession').value;
-		const appli_date = formatDateToDdMmYyyy(new Date(document.getElementById('appli_date').value));
-		const stcharacter = document.getElementById('stcharacter').value;
-		
-		
-
-		// Create the PDF content as an HTML string
-		const pdfContent = `
-
-		<div >
-                
-				<div style="width: 82px; position: relative; padding-top: 5px; align-self: right; float: left;padding-left: 10px; ">
-				<img src="goldenhillslogo.jpg" class="imagestyle">
-				</div>
-				<div style="text-align: center;">
-		
-				<h2>Golden Hills Arts & Science College, Elettil</h2>
-				<h6>Affiliated to University of Calicut & Recognized by Govt. of Kerala</h6>
-				<h5>Valiyaparamba(Po), Koduvally(Via), Kozhikode, Kerala - 673572</h5>
-				</div>
-				<div style="text-align: center;">
-				
-				<hr style="height: 2px; background-color: black;">
-				<br>
-				<h2>TRANSFER & CONDUCT CERTIFICATE</h2>
-				<br>
-				</div>
-				</div>
-		
-		<div style="padding-left: 50px;">
+			<div style="text-align: center;">
+	
+			<h1>Golden Hills Arts & Science College</h1>
 			
-			<table>
-		<tr>
-			<td><p><strong>T C Number: ${tcno}</strong></p></td>
-			<td></td>
-			<td style="text-align: right;"><strong>Date : ${tcdate}</strong></td>
+			<h6 style="margin-top:-5px;">Recognised by Govt. of Kerala & Affiliated to University of Calicut</h6>
+			<h6>Elettil, P.O. Valiyaparamba, Kozhikode - 673 572, Ph:80869 09087</h6>
+			<h6 style="margin-top:-8px;">www.goldenhillscollege.com, E-mail: goldenhillscollege@gmail.com</h6>
 			
-		</tr>
-		<tr>
-			<td><strong>Name of the student</strong></td>
-			<td> : </td>
-			<td><strong><span class="uppercase"> ${name} </span></strong></td>
-		</tr>
-		<tr>
-			<td><strong>Date of Birth</strong> </td>
-			<td> : </td>
-			<td><strong> ${dobdate}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Date of Birth (in words)</strong></td>
-			<td> : </td>
-			<td><strong><span class="uppercase"> ${dobwords}</span></strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Course</strong> </td>
-			<td> : </td>
-			<td><strong> ${course}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Admission Date</strong> </td>
-			<td> : </td>
-			<td><strong> ${admission_date}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Admission Number</strong> </td>
-			<td> : </td>
-			<td><strong> ${admn_No}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Leaving Date</strong> </td>
-			<td> : </td>
-			<td><strong> ${leaving_date}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Enrolled Semester</strong> </td>
-			<td> : </td>
-			<td><strong> ${from_sem}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Leaving Semester</strong> </td>
-			<td> : </td>
-			<td><strong> ${to_sem}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Reason for leaving</strong> </td>
-			<td> : </td>
-			<td><strong><span class="uppercase"> ${reason}</span></strong> </td>
-		</tr>
-		
-		<tr>
-			<td><strong>Last Examination appeared</strong> </td>
-			<td> : </td>
-			<td><strong><span class="uppercase"> ${exam_appeared} ${month_year}</span></strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Register Number</strong> </td>
-			<td> : </td>
-			<td><strong><span class="uppercase"> ${regno}</span></strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Whether qualified for promotion</strong> </td>
-			<td> : </td>
-			<td><strong> ${promotion}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Whether all dues to the college have been cleared</strong> </td>
-			<td> : </td>
-			<td><strong> ${dues}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Whether the student availed any fee concession</strong> </td>
-			<td> : </td>
-			<td><strong> ${concession}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Date of application for Transfer Certificate</strong> </td>
-			<td> : </td>
-			<td><strong> ${appli_date}</strong> </td>
-		</tr>
-		<tr>
-			<td><strong>Student's Conduct and Character</strong> </td>
-			<td> : </td>
-			<td><strong><span class="uppercase"> ${stcharacter}</span></strong> </td>
-		</tr>
-		<tr style="height:50px"><td></td></tr>
-		
-		<tr>
+			</div>
+			<div style="text-align: center; padding-top:4px">
 			
-			<td>Office seal</td>
-			<td></td>
-			<td style="text-align: right; padding:15px;"><h5>Principal</h5></td>
-		</tr>
-
-	</table>
+			<hr style="height: 2px; background-color: black;">
+			<br>
+			<h2><u>TRANSFER & CONDUCT CERTIFICATE</u></h2>
+			<br>
+			</div>
+			</div>
+	
+	<div style="padding-left: 50px" ;>
 		
-		`;
-
-		// Display the content in the PDF section
-		document.getElementById('pdf-content').innerHTML = pdfContent;
 		
-
-		// Generate the PDF using html2pdf
-		html2pdf().from(document.getElementById('pdf-content')).save('tc.pdf');
+	<p><strong>T C Number: ${tcno}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date : ${tcdate}</strong></p>
 		
-	}
-		</script>
 		
-		<script>
-			function ReasonSelection(){
-				const selreason=document.getElementById('reason_selection').value;
-				document.getElementById('reason').value = selreason;
-				document.getElementById('reason_selection').value=""
-			}
-			function LastAppearedExam(){
-				const selreason=document.getElementById('exam_selection').value;
-				document.getElementById('exam_appeared').value = selreason;
-				document.getElementById('exam_selection').value=""
-			}
+		
+	<table class="tablestyle">
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Name of the student</strong></td>
+		
+		<td class="tablestyle"><strong><span class="uppercase">${name} </span></strong></td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Date of Birth</strong> </td>
+		
+		<td class="tablestyle"><strong> ${dobdate}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Date of Birth (in words)</strong></td>
+		
+		<td class="tablestyle"><strong><span class="uppercase"> ${dobwords}</span></strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Course</strong> </td>
+		
+		<td class="tablestyle"><strong> ${course}${honours}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Admission Date</strong> </td>
+		
+		<td class="tablestyle"><strong> ${admission_date}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Admission Number</strong> </td>
+		
+		<td class="tablestyle"><strong> ${admn_No}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Leaving Date</strong> </td>
+		
+		<td class="tablestyle"><strong> ${leaving_date}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Enrolled Semester</strong> </td>
+		
+		<td class="tablestyle"><strong> ${from_sem}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Leaving Semester</strong> </td>
+		
+		<td class="tablestyle"><strong> ${to_sem}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Reason for leaving</strong> </td>
+		
+		<td class="tablestyle"><strong><span class="uppercase"> ${reason}</span></strong> </td>
+	</tr>
+	
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Last Examination appeared</strong> </td>
+	
+		<td class="tablestyle"><strong><span class="uppercase"> ${exam_appeared} ${month_year}</span></strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Register Number</strong> </td>
+		
+		<td class="tablestyle"><strong><span class="uppercase"> ${regno}</span></strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Whether qualified for promotion</strong> </td>
+		
+		<td class="tablestyle"><strong> ${promotion}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Whether all dues to the college have been cleared</strong> </td>
+		
+		<td class="tablestyle"><strong> ${dues}</strong> </td>
+	</tr>
+	
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Date of application for Transfer Certificate</strong> </td>
+	
+		<td class="tablestyle"><strong> ${appli_date}</strong> </td>
+	</tr>
+	<tr class="tablestyle">
+		<td class="tablestyle"><strong>Student's Conduct and Character</strong> </td>
+		
+		<td class="tablestyle"><strong><span class="uppercase"> ${stcharacter}</span></strong> </td>
+	</tr>
+	
 
+</table>
 
-			function formatDateToDdMmYyyy(date) {
-  const day = String(date.getDate()).padStart(2, '0');
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const year = date.getFullYear();
+<br>
+<br>
+<br>
+Office seal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 style="text-align:right">Principal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+	
+	`
+	alert("Press Ctrl+P to Print or Save PDF");
+	;
 
-  return `${day}/${month}/${year}`;
+	// Display the content in the PDF section
+	document.getElementById('pdf-content').innerHTML = pdfContent;
+	
+
+	// Generate the PDF using html2pdf
+	html2pdf().from(document.getElementById('pdf-content')).save('tc.pdf');
+	 
+}
+	</script>
+	
+	<script>
+		function ReasonSelection(){
+			const selreason=document.getElementById('reason_selection').value;
+			document.getElementById('reason').value = selreason;
+			document.getElementById('reason_selection').value=""
+		}
+		function LastAppearedExam(){
+			const selreason=document.getElementById('exam_selection').value;
+			document.getElementById('exam_appeared').value = selreason;
+			document.getElementById('exam_selection').value=""
+		}
+		function charSelection(){
+			const charselect=document.getElementById('char_selection').value;
+			document.getElementById('stcharacter').value = charselect;
+			document.getElementById('char_selection').value=""
+		}
+		
+		function examMonth(){
+			const monthSelect=document.getElementById('exam_month_selection').value;
+			document.getElementById('month_year').value = monthSelect;
+			document.getElementById('exam_month_selection').value=""
+		}
+
+		function formatDateToDdMmYyyy(date) {
+const day = String(date.getDate()).padStart(2, '0');
+const month = String(date.getMonth() + 1).padStart(2, '0');
+const year = date.getFullYear();
+
+return `${day}/${month}/${year}`;
 }
 
-		</script>
+	</script>
 
 
-		<script>
-			document.getElementById("dobdate").oninput = function(){convertToDateWords()}
+	<script>
+		document.getElementById("dobdate").oninput = function(){convertToDateWords()}
+	
+		// script.js
+	function convertToDateWords() {
+		// Get the date value from the input field
+		const dateInput = document.getElementById("dobdate").value;
+	
+		// Convert the date to words (you can use a library like 'date-fns' for this)
+		const dateInWords = formatDateToWords(new Date(dateInput));
+	
+		// Display the converted date in the output element
+		const outputElement = document.getElementById("dobwords");
+		outputElement.value = `${dateInWords}`;
 		
-			// script.js
-		function convertToDateWords() {
-			// Get the date value from the input field
-			const dateInput = document.getElementById("dobdate").value;
+	}
+	
+	// Function to convert date to words (you can use a library like 'date-fns' for this)
+	function formatDateToWords(date) {
+		// Implement your logic here to convert the date to words
+		// Example: "October 1, 2023"
+		return date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+	}
+	
 		
-			// Convert the date to words (you can use a library like 'date-fns' for this)
-			const dateInWords = formatDateToWords(new Date(dateInput));
-		
-			// Display the converted date in the output element
-			const outputElement = document.getElementById("dobwords");
-			outputElement.value = `${dateInWords}`;
-			
-		}
-		
-		// Function to convert date to words (you can use a library like 'date-fns' for this)
 		function formatDateToWords(date) {
-			// Implement your logic here to convert the date to words
-			// Example: "October 1, 2023"
-			return date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+			// Define arrays for month names and units
+			const months = [
+				"JANUARY", "FEBRUARY", "MARCH", "APRIL",
+				"MAY", "JUNE", "JULY", "AUGUST",
+				"SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
+			];
+		
+			// Get the day, month, and year from the date
+			const day = date.getDate();
+			const monthIndex = date.getMonth();
+			const year = date.getFullYear();
+		
+			// Convert the components to words
+			const month = months[monthIndex];
+			const dayInWords = numberToWords(day);
+			const yearInWords = yearToWords(year);
+		
+			// Format the date in words
+			const formattedDate = `${dayInWords}-${month}-${yearInWords}`;
+		
+			return formattedDate;
 		}
 		
-			
-			function formatDateToWords(date) {
-				// Define arrays for month names and units
-				const months = [
-					"JANUARY", "FEBRUARY", "MARCH", "APRIL",
-					"MAY", "JUNE", "JULY", "AUGUST",
-					"SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
-				];
-			
-				// Get the day, month, and year from the date
-				const day = date.getDate();
-				const monthIndex = date.getMonth();
-				const year = date.getFullYear();
-			
-				// Convert the components to words
-				const month = months[monthIndex];
-				const dayInWords = numberToWords(day);
-				const yearInWords = yearToWords(year);
-			
-				// Format the date in words
-				const formattedDate = `${dayInWords}-${month}-${yearInWords}`;
-			
-				return formattedDate;
+		// Function to convert numbers to words for days
+		function numberToWords(number) {
+			const unit = ["", "FIRST", "SECOND", "THIRD", "FOURTH", "FIFTH", "SIXTH", "SEVENTH", "EIGHTH", "NINTH"];
+			const teens = ["", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN", "FIFTEEN", "SIXTEEN", "SEVENTEEN", "EIGHTEEN", "NINETEEN"];
+			const tens = ["", "TEN", "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", "SEVENTY", "EIGHTY", "NINETY"];
+			const units = ["", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"];
+		
+			if (number === 0) {
+				return "ZERO";
+			} else if (number < 10) {
+				return units[number];
+			} else if (number < 20) {
+				return teens[number - 10];
+			} else {
+				const ten = Math.floor(number / 10);
+				const unit = number % 10;
+				return `${tens[ten]} ${units[unit]}`;
 			}
-			
-			// Function to convert numbers to words for days
-			function numberToWords(number) {
-				const unit = ["", "FIRST", "SECOND", "THIRD", "FOURTH", "FIFTH", "SIXTH", "SEVENTH", "EIGHTH", "NINTH"];
-				const teens = ["", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN", "FIFTEEN", "SIXTEEN", "SEVENTEEN", "EIGHTEEN", "NINETEEN"];
-				const tens = ["", "TEN", "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", "SEVENTY", "EIGHTY", "NINETY"];
-				const units = ["", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"];
-			
-				if (number === 0) {
-					return "ZERO";
-				} else if (number < 10) {
-					return units[number];
-				} else if (number < 20) {
-					return teens[number - 10];
-				} else {
-					const ten = Math.floor(number / 10);
-					const unit = number % 10;
-					return `${tens[ten]} ${units[unit]}`;
-				}
-			}
-			
-			// Function to convert the year to words
-			function yearToWords(year) {
-		const thousands = Math.floor(year / 1000);
-		const hundreds = Math.floor((year % 1000) / 100);
-		const tens = Math.floor((year % 100) / 10);
-		const ones = year % 10;
-
-		const yearWords = [];
-
-		if (thousands > 0) {
-			yearWords.push(`${numberToWords(thousands)} THOUSAND`);
 		}
+		
+		// Function to convert the year to words
+		function yearToWords(year) {
+	const thousands = Math.floor(year / 1000);
+	const hundreds = Math.floor((year % 1000) / 100);
+	const tens = Math.floor((year % 100) / 10);
+	const ones = year % 10;
 
-		if (hundreds > 0) {
-			yearWords.push(`${numberToWords(hundreds)} HUNDRED`);
-		}
+	const yearWords = [];
 
-		if (tens === 1) {
-			yearWords.push(`${numberToWords(10 + ones)}`);
-		} else if (tens > 1) {
-			yearWords.push(numberToWords(tens * 10));
-		}
-
-		if (ones > 0 && tens !== 1) {
-			yearWords.push(numberToWords(ones));
-		}
-
-		return yearWords.join(" ");
+	if (thousands > 0) {
+		yearWords.push(`${numberToWords(thousands)} THOUSAND`);
 	}
 
-			
-			// Example usage:
-			const date = new Date("03-10-2023");
-			const formattedDate = formatDateToWords(date);
-			console.log(formattedDate); // Output: "third October two thousand twenty three"
-			
+	if (hundreds > 0) {
+		yearWords.push(`${numberToWords(hundreds)} HUNDRED`);
+	}
+
+	if (tens === 1) {
+		yearWords.push(`${numberToWords(10 + ones)}`);
+	} else if (tens > 1) {
+		yearWords.push(numberToWords(tens * 10));
+	}
+
+	if (ones > 0 && tens !== 1) {
+		yearWords.push(numberToWords(ones));
+	}
+
+	return yearWords.join(" ");
+}
+
 		
-			</script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-	</body>
-	</html>
+		// Example usage:
+		const date = new Date("03-10-2023");
+		const formattedDate = formatDateToWords(date);
+		console.log(formattedDate); // Output: "third October two thousand twenty three"
+		
+	
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
